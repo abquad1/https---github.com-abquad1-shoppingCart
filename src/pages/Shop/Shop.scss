@@ -1,0 +1,47 @@
+.shop{
+    width: 100%;
+    position: relative;
+
+    .shopTitle{
+        h1{
+            text-align: center;
+            font-size: 50px;
+        }
+    }
+
+    .products{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 95%;
+        margin: auto;
+
+        .product{
+            text-align: center;
+
+            img{
+                height: 300px;
+            }
+
+            
+            .description{
+                p{
+                    font-size: 25px;
+                }
+            }
+
+            .AddToCart{
+                background: transparent;
+                width: 170px;
+                height: 50px;
+                font-size: 20px;
+                border-radius: 10px;
+                cursor: pointer;
+
+                &:hover{
+                    color: white;
+                    background-color: #333;
+                }
+            }
+        }
+    }
+}
